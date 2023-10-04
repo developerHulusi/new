@@ -12072,4 +12072,13 @@ table.rounded {
   }
 }
 
+
+
+.background-image {
+  background-image: url('resim.jpg'); /* Arka plan resminin yolunu belirtin */
+  background-size: cover; /* Resmi div boyutuna sığdırır */
+  background-repeat: no-repeat; /* Resmi yinelemeyi engeller */
+  height: 100vh; /* Ekran yüksekliği kadar genişlik */
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
