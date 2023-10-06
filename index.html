@@ -3,64 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encode Decode</title>
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-  <div class="container col-6 vertical-center">
-        <!-- tablo başlangıcı -->
-          <table class="table rounded table-primary table-striped, container text-center">
-           <thead>     
-            <tr>    
-              <th class="col-4">      <!--her colon 3 lük yer kaplıyor -->
-                  <div>
-                    <input class="text-center bg-info-subtle text-dark" type="text" id="veriGirisi">
-                  </div>                        
-              </th>    
-              <th class="col-4">      <!--her colon 3 lük yer kaplıyor -->
-                <div>
-                  <input class="text-center bg-info-subtle text-dark" type="text" id="veriGirisi2"> 
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <!-- ilk body -->
-          <tbody>  
-            <tr>
-              <!-- encod eden buton -->
-                <th class="col-3">
-                  <button type="button" class="btn btn-outline-primary" onclick="myFunction()">Encod</button>
-                </th>
-              <!-- decod eden buton -->
-                <th class="col-3">
-                  <button type="button" class="btn btn-outline-primary" onclick="myFunction2()">Decod</button>
-                </th>
-            </tr>       
-          </tbody>
-          
-          <!-- ikinci body -->
-          <tbody>  
-            <tr>
-              <td> 
-                <div id="sonuc">
-                  <!-- kodlanmış Metin'in geldiği kısım -->
-                  ENCOD
-                </div>
-                
-              </td>
-  
-              <td>
-                <div id="sonuc2">
-                  <!-- çözülmüş Metin'in geldiği kısım -->
-                  DECOD
-                </div>     
-              </td>     
-            </tr>       
-          </tbody>
-        
-        </table>
+  <div class="background-image">
+      <div class="container">
+          <div class="row">     
+          <!-- tablo başlangıcı -->
+              <table class="table rounded table-primary table-striped, container text-center">
+              <div class="col-sm-12 col-md-6 col-lg-4">  
+                <thead>     
+                <tr>
+                  <h1 class="table rounded table-primary table-striped, container text-center btn btn-primary">Enter The Code in The Space Below</h1>    
+                  <th>      <!--her colon 3 lük yer kaplıyor -->
+                      <div>
+                        <input class="text-center bg-info-subtle text-dark" type="text" id="veriGirisi">
+                      </div>                        
+                  </th>    
+                  <th>      <!--her colon 3 lük yer kaplıyor -->
+                    <div>
+                      <input class="text-center bg-info-subtle text-dark" type="text" id="veriGirisi2"> 
+                    </div>
+                  </th>
+                </tr>
+                </thead>
+              </div>
+             <!-- ilk body -->
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <tbody>  
+                  <tr>
+                    <!-- encod eden buton -->
+                      <th>
+                        <button type="button" class="btn btn-outline-primary" onclick="myFunction()">Encod</button>
+                      </th>
+
+                      <!-- decod eden buton -->
+                      <th>
+                        <button type="button" class="btn btn-outline-primary" onclick="myFunction2()">Decod</button>
+                      </th>
+                  </tr>       
+                </tbody>
+              </div>           
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <tbody>  
+                  <tr>
+                    <td> 
+                      <div id="sonuc">
+                        <!-- kodlanmış Metin'in geldiği kısım -->
+                        ENCOD
+                      </div>                    
+                    </td>      
+                    <td>
+                      <div id="sonuc2">
+                        <!-- çözülmüş Metin'in geldiği kısım -->
+                        DECOD
+                      </div>     
+                    </td>
+
+                  </tr>       
+                </tbody>
+              </div>
+              <!-- ikinci body -->
+              </table>     
+          </div>
+      </div>
   </div>
     
+  
+
+
 <script src="encod.js" ></script>
 <script src="decod.js" ></script>
 </body>
